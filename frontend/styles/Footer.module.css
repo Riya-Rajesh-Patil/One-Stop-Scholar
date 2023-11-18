@@ -1,0 +1,51 @@
+.selectedBold {
+  color: #e56a54 !important;
+  font-weight: bold;
+}
+
+.selectedBolder {
+  color: #e56a54 !important;
+  font-weight: bolder !important;
+  text-decoration: underline;
+}
+
+.nav-logo {
+  position: relative;
+  top: 9px;
+  left: -38px;
+}
+
+.footer {
+  left: 0;
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  background-color: #1f2937;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .copyrightText {
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.footer .copyrightLogo {
+  height: 15px;
+  width: 15px;
+}
+.footer .links a {
+  color: rgb(219, 219, 219);
+  text-decoration: none;
+  margin: auto 20px;
+}
+.footer .links a:hover {
+  font-weight: 700;
+}
+.footer .socialIcons {
+  padding: 10px;
+}
+.footer .socialIcons:hover {
+  transform: translateY(-4px);
+}/*# sourceMappingURL=Footer.module.css.map */

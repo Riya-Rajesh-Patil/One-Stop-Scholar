@@ -1,0 +1,22 @@
+.selectedBold {
+  color: #e56a54 !important;
+  font-weight: bold;
+}
+
+.selectedBolder {
+  color: #e56a54 !important;
+  font-weight: bolder !important;
+  text-decoration: underline;
+}
+
+.nav-logo {
+  position: relative;
+  top: 9px;
+  left: -38px;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}/*# sourceMappingURL=globals.css.map */

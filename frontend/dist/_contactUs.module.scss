@@ -1,0 +1,30 @@
+.contactContainer{
+    text-align: center;
+    margin: 50px auto 100px auto;
+    width: 90%;
+    margin-left:30%;
+}
+
+.contactCard {      
+        width: 40%;
+        height: 50%;
+        padding:10px;
+        box-sizing: border-box;
+        background-color: white;
+        border-radius: 5px;
+        margin: 23px;
+        box-shadow: 5px 5px 5px rgb(95, 94, 94);    
+}
+
+.contactCardHeader {
+    color: orangered;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 40% 52%;
+}
+
+.contactPic {
+    border-radius: 50px;
+}

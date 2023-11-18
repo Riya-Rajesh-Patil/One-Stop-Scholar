@@ -1,0 +1,16 @@
+@import 'tokens';
+
+.signOutButton {
+    border: none;
+    background-color: transparent;
+    color: $secondary-text-color;
+    text-decoration: none;
+    cursor: pointer;
+    font-size:14px;
+
+    &:hover {
+        color: black;
+        font-weight: fonts(bold);
+    }
+}
+

@@ -1,0 +1,43 @@
+import styles from '../styles/Home.module.css'
+import Link from 'next/link'
+import Image from 'next/image'
+import { useRef } from 'react'
+
+export default function Home() {
+
+    return (
+        <div className={styles.container}>
+            <nav className={styles.navbar}>
+                <a href='http://localhost:3000'><Image src="/Scholar.gif" alt="OneStopScholar" className="nav-logo" width={120} height={120}></Image></a>
+                <div className={styles.centerNav}>
+                    <Link href='/scholarship' legacyBehavior><a>Scholarships</a></Link>
+                    <Link href='/countries' legacyBehavior><a>Countries</a></Link>
+                    <Link href='/degree' legacyBehavior><a>Degrees</a></Link>
+                    <Link href='/contactus' legacyBehavior><a>Contact Us</a></Link>
+                </div>
+                <div className='login-container'>
+                    <Link href='/signin' legacyBehavior><a>Sign In</a></Link>
+                    {/* <Link href='#' legacyBehavior><a>Sign Out</a></Link> */}
+                </div>
+            </nav>
+
+      <div className={styles.banner}>
+      <h1 className={styles.footerPageHeaders}>Privacy Statement</h1>
+      </div>
+
+
+            <div className={styles.termsConditions}>
+                <h1>Privacy Policy</h1>
+                <p>Onestop Scholar’s Privacy Policy applies to use of this Site, and the terms are made a part of these Terms of Use by this reference. Additionally, by using the Site, you agree that Internet transmissions are never completely private or secure and that Onestop Scholar cannot and will not be held accountable for the aforementioned potential lack of Internet transmission security. You understand and agree that any message or information you send to the Site may be read or intercepted by others, even if there is a special notice that a particular transmission is via a secure server.</p>
+                <h1>Accounts, Passwords and Security</h1>
+                <p>Certain features and/or services offered on or through the Site may require you to register, including setting up a Onestop Scholar user account. You are entirely responsible for maintaining the confidentiality of your account information, including your password, and for any and all activity that occurs under your account. By using the Site you agree to notify Onestop Scholar immediately of any unauthorized use of your account or password, or any other breach of security. You may be held liable for losses incurred by Onestop Scholar or any other user of or visitor to the Site due to someone else using your Onestop Scholar password or account. You may not use anyone else’s Onestop Scholar password or account at any time without the permission and consent of the holder of that Onestop Scholar password or account. Onestop Scholar cannot and will not be liable for any loss or damage arising from your failure to comply with these obligations.</p>
+                <h1>Collection of Information from Children</h1>
+                <p>Onestop Scholar abides by federal law and the guidelines set up by the Federal Trade Commission regarding youth privacy. As such, Onestop Scholar will not knowingly collect any personally-identifiable information from children under the age of 13, nor will children under the age of 13 be allowed to register with Onestop Scholar. This Web site is not intended for children under the age of 13. Onestop Scholar will not knowingly register or otherwise collect Personal Information from persons who identify themselves as being under the age of 13 during the registration process, without prior consent of such child’s parent or guardian.</p>
+                <h1>Purchases: Terms and Conditions</h1>
+                <p>Additional terms and conditions may apply to purchases of goods or services and to specific sections or features of the Site, including all contests, promotions or other similar features, all of which terms are made a part of these Terms of Use by this very reference. You agree to abide by such other terms and conditions, including where applicable representing that you are of the required legal age to use or participate in said service or feature. If there is any conflict between these Terms of Use and the terms posted for, or applicable to, a specific portion of the Site or for any service offered on or through the Site, the latter terms shall have control with respect to your use of that portion of the Site or that specific service. Onestop Scholar may make changes to any services or any products offered on the Site, or to the applicable prices for any services or any products, at any time, without notice. The materials on the Site with respect to products and services may be outdated, and Onestop Scholar makes no commitment to update the materials on the Site with respect to the aforementioned products and services. Onestop Scholar’s obligations, if any, with regard to its products and services are governed solely by the agreements pursuant to which they are provided, and nothing on this Site should be construed to alter such agreements. Each of these policies may be changed from time to time and are effective immediately upon posting such changes on the Site.</p>
+                <h1>Use of the Site</h1>
+                <p>You are not, under any circumstance, to use any "deep-link," "page-scrape," "robot," "spider," or any other such automatic device, program, algorithm or methodology, or any similar manual or automated process, to copy, access or monitor or otherwise acquire any portion of the Site or any Content therein, or in any way reproduce or circumvent the navigational structure or presentation of the Site or any Content therein, to obtain or attempt to obtain any materials, documents or any other such information through any means not purposely made available through the Site. Onestop Scholar reserves the right to bar any such activity. You may not probe, scan, or test the vulnerability of the Site or any network that is connected to the Site, nor may you breach the security or authentication measures that are in place on the Site or any network connected to the Site. You may not reverse look-up, trace or seek to trace any information on any other user of and/or visitor to the Site, or any other customer of Onestop Scholar, including any Onestop Scholar account not owned by you, to its source, or exploit the Site or any service or information made available or offered by or through the Site, in any way where the purpose is to reveal any information, including but not limited to personal identification or information, other than your own information, as provided for by the Site. You may not attempt to gain unauthorized access to any portion nor any feature of the Site, nor may you attempt to view or access any other systems or networks connected to the Site nor may you attempt to gain access to any Onestop Scholar server, nor to any of the services offered on or through the Site, by hacking, password "mining" or any other illegitimate means. By using the Site, you agree that you will not take any action that imposes an unreasonable or disproportionately large load on the servers or any part of the infrastructure of the Site or Onestop Scholar’s systems or networks, or any other systems or networks connected to the Site or to Onestop Scholar. You agree not to use any device, routine or software to interfere or attempt to interfere with the proper and efficient working of the Site or any transaction being conducted on the Site, or with any person’s use of the Site. You may not use the Site or any Content therein for any purpose that is unlawful, fraudulent or in any way prohibited by these Terms of Use, or to solicit the performance of any illegal activity or other activity which infringes the rights of Onestop Scholar or others. You may not forge headers, manipulate, or otherwise disguise identifiers in order to hide the origin of any message or transmittal you send to Onestop Scholar on or through the Site or any service offered on or through the Site. You may not pretend that you are, or that you represent, someone else, or impersonate any other individual or entity. You represent and warrant that any information you provide to Onestop Scholar via the Site, including without limitation at the time you register an account with Onestop Scholar, will be true, accurate, current and complete, and no such information will be provided under false pretenses.</p>
+            </div>
+        </div>
+    )
+}

@@ -1,0 +1,368 @@
+@import 'tokens';
+@import 'signIn.module';
+@import 'studentDashboard.module';
+@import 'degree.module';
+@import 'scholarship.module';
+@import 'studentProfile.module';
+@import 'sponsorDashboard.module';
+@import 'contactUs.module';
+@import 'countries.module';
+@import 'applications.module';
+@import'tnc.module';
+
+
+.header {
+    text-align: center;
+}
+
+.navbar {
+    @include flexEqualDistribution;
+    position: fixed;
+    overflow: hidden;
+    background-color: whitesmoke;
+    left: 0px;
+    top: 0px;
+    height: 12vh;
+    width: 100%;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 10px grey;
+    z-index: 1;
+
+    a {
+        text-decoration: none;
+        color: $secondary-text-color;
+        margin: 5px 20px;
+
+        &:hover {
+            color: black;
+            font-weight: fonts(bold);
+        }
+    }
+    
+}
+
+.banner {
+    margin-top: 17vh;
+    margin-bottom: 4vh;
+    text-align: center;
+}
+
+
+.imageBannerContainer {
+    @include flexCenter;
+    background: url(../public/hellostu.png); //radial-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(../public/hellostu.png);
+    width: 100%;
+   // border-radius: 20px;
+    height: 60vh;
+    background-size: cover;
+    flex-direction: column;
+    position: relative;
+    top: 13vh;
+    
+    h2 {
+        color: white;
+        font-size: xx-large;
+        padding-top: 50px;
+    }
+
+    .form {
+        @include flexCenter;
+        background-color: rgba(255,255,255, 0.9);
+        height: 10vh;
+        width: 100vh;
+        border-radius: 5px;
+
+        input {
+            width: 60%;
+            margin: 5px;
+            height: 30px;
+            border: none;
+            background-color: transparent;
+
+
+            &:hover {
+                border: 2px solid grey;
+                
+                &::placeholder {
+                    font-weight: fonts(bold);
+                    
+                }
+            }
+            
+            &::placeholder {
+                font-weight: 500;
+                color: black;
+                text-align: center;
+                letter-spacing: 2px;
+            }
+        }
+        
+        button {
+            width: 30%;
+            margin: 5px;
+            height: 35px;
+            border: none;
+            background-color: $button-color;
+            color: white;
+            font-weight: 500;
+            letter-spacing: 2px;
+            border-radius: 4px;
+
+            &:hover {
+                cursor: pointer;
+                font-weight: bold;
+                box-shadow: 2px 2px 5px grey;
+            }
+        }
+    }
+}
+
+.destinations {
+    margin-top: 18vh;
+
+    .cardContainer {
+        @include flexEqualDistribution;
+        text-align: center;
+        margin: 50px auto 100px auto;
+        width: 90%;
+
+        .card {
+            width: 23%;
+            height: 55vh;
+            padding: 8px;
+            box-sizing: border-box;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px grey;
+
+            .cardImage {
+                height: 75%;
+                width: 100%;
+            }
+
+            p {
+                color: grey;
+                margin-bottom: 0;
+            }
+
+            h4 {
+                margin-top: 5px;
+            }
+        }
+        .card:hover{
+             transform: scale(1.03);
+            transition: 0.5s;}
+            //background-color: #e56a54;
+    }
+}
+
+.seeMore1 {
+    position: relative;
+    z-index: 0;
+    top: -52vh;
+    /* left: 94%; */
+    float: right;
+}
+
+.seeMore1:hover {
+    visibility: visible;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.seeMore2 {
+    position: relative;
+    z-index: 0;
+    //left: 94%;
+    float: right;
+    top: -52vh;
+    // visibility: hidden;
+}
+
+.seeMore2:hover {
+    visibility: visible;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+// .blogContainer {
+//     @include flexEqualDistribution;
+//         text-align: center;
+//         margin: 50px auto 100px auto;
+//         width: 90%;
+
+//     .blogs {
+//         width: 49%;
+//         height: 52vh;
+//         padding: 10px;
+//         box-sizing: border-box;
+//         background-color: white;
+//         border-radius: 5px;
+//         box-shadow: 2px 2px 10px grey;
+
+//         .blogsGrid {
+//             display: grid;
+//             grid-template-columns: 50% 50%;
+
+//         }
+//     }
+// }
+
+.reviewsContainer {
+    @include flexEqualDistribution;
+        display: flex;
+        margin: 50px auto 100px auto;
+        width: 90%;
+
+        .reviews {
+            width: 49%;
+            height: 52vh;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px grey;
+
+            .reviewGrid {
+                display: grid;
+                grid-template-columns: 10% 80% 10%;
+
+            }
+        }
+
+        // .reviews:hover{
+        //     transform: scale(1.03);
+        //    transition: 0.5s;}
+}
+
+.reviewsHeader{
+    color: orangered;
+    font-size: large;
+
+    .reviewHeader1 {
+        display: grid;
+        grid-template-columns: 15% 85%;
+    }
+
+    .reviewPhoto {
+        border-radius: 50%;
+    }
+}
+
+.featuresLogo {
+    @include flexEqualDistribution;
+    display: flex;
+    margin: 50px auto 100px auto;
+    width: 40%;;
+}
+.featuresLogo1 {
+    margin: 10px;
+}
+
+
+@each $name, $path in $destination-images-paths {
+    .#{$name} {
+        background: url($path);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.successMessage {
+    text-align: center;
+    color: rgb(35, 183, 44);
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-weight: fonts(medium-bold);
+}
+
+.footerPageHeaders {
+    font-size: x-large;
+}
+
+.form {
+   // @include flexCenter;
+   display: flex;
+   align-items: center;
+    //background-color: rgba(255,255,255, 0.9);
+    height: 16vh;
+    //width: 100vh;
+    border-radius: 5px;
+    background-color: #f3dd6d;
+    .formtext{
+        position: relative;
+        font-size: 2vh;
+        text-align: center;
+        top: -22px;
+        left: 288px;
+    }
+    input {
+        margin: 16px;
+        height: 30px;
+        border: none !important;
+        border-radius: 3px;
+        position: relative;
+        top: 23px;
+        right: 147px;
+
+
+        &:hover {
+            border: 2px solid grey;
+            
+            &::placeholder {
+                font-weight: fonts(bold);
+                
+            }
+        }
+        
+        &::placeholder {
+            font-weight: 500;
+            color: black;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+    }
+
+    button {
+        width: 10%;
+        margin: 5px;
+        height: 35px;
+        border: none;
+        background-color: #db6550;
+        color: white;
+        font-weight: 500;
+        letter-spacing: 2px;
+        border-radius: 4px;
+        position: relative;
+        top: 23px;
+        right: 147px;
+
+        &:hover {
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 2px 2px 5px grey;
+        }
+    }
+}
+
+.applynow{
+    text-align: center;
+    
+    position: relative;
+    top: 10vh;
+    right: 53vh;
+    height: 8vh;
+    width: 41vh;
+    background-color: #e56a54;
+    color: white;
+    font-size: larger;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.applynow:hover{
+    background-color: #ffc4b9;
+    color: black;
+}

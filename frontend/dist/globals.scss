@@ -1,0 +1,7 @@
+@import 'tokens';
+
+body {
+    font-family: $font-family;
+    background-color: $primary-bg-color;
+    overflow-x: hidden;
+}

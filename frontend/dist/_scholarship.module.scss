@@ -1,0 +1,228 @@
+@import 'tokens';
+
+.quote{
+    font-size: xx-large;
+    font-family: fangsong;
+    color: #c86c6c;
+    text-shadow: 1px 1px #848484;
+}
+.popScholarships{
+    text-align: center;
+    position: relative;
+    //right: -523px;
+    top: 26px;
+    color: #4d4d4d;
+    /* text-shadow: 1px 1px #848484; */
+    font-family: inherit;
+    font-weight: bolder;
+    font-size: x-large;
+
+
+}
+.popScholarshipsDes{
+    text-align: center;
+    position: relative;
+    right: 407px;
+    top: 26px;
+    text-shadow: 1px 1px #848484;
+
+}
+
+.heading {
+    margin-top: 10%;
+    font-weight: fonts(bold);
+    // color: aqua;
+}
+
+.description {
+    // color: yellow;
+    font-weight: fonts(regular);
+}
+
+.applyButton{
+    background-color: orange;
+}
+
+.schApp{
+    margin-top: 10%;
+    list-style: none;
+    
+
+    li {
+        @include autoMarginHorizontal;
+        display: flex;
+        width: 80%;
+
+        span {
+            font-weight: fonts(bold);
+            width: 20%;
+            @include flexEqualDistribution;
+        }
+
+        p {
+            width: 80%;
+        }
+
+    }
+}
+
+.scholarshipApplyButton {
+    // @include flexCenter;
+    @include autoMarginHorizontal;
+    margin-bottom: 10vh;
+    width: 30%;
+
+    button {
+        width: 100%;
+        height: 7vh;
+        border: none;
+        color: white;
+        background-color: $button-color;
+        border-radius: 5px;
+        font-size: medium;
+        letter-spacing: 2px;
+
+        &:hover {
+            box-shadow: 2px 2px 5px grey;
+            font-weight: fonts(medium-bold);
+            cursor: pointer;
+        }
+    }
+}
+
+.scholarships {
+    margin-top: 20vh;
+    
+    .schcardContainer {
+       // @include flexEqualDistribution;
+        
+       text-align: center;
+        margin: 50px auto 100px auto;
+        width: 90%;
+
+        .schcard {
+            width: 100%;
+            height: 50%;
+            padding: 2em;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            border-radius: 5px;
+            margin: 3em auto;
+            border-color: #5b7f95;
+            box-shadow: 5px 5px 5px rgb(95, 94, 94);
+            border-style: solid;
+
+            a {
+                color: black;
+                font-weight: fonts(bold);
+                font-size: larger;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px grey;
+
+                &:hover {
+                    color: blue;
+                    text-decoration: underline;
+                    transition: 200ms linear;
+                }
+            }
+
+            .cardImage {
+                height: 100%;
+                width: 50%;
+                opacity: 20%;
+            }
+
+            p {
+                color: grey;
+                margin-bottom: 0;
+            }
+
+            .countries{
+                position: relative;
+                top: 1px;
+                right: 313px;
+                color: black;
+                font-weight: bold;
+                font-size: 25px;
+            }
+
+            .details {
+                // @include autoMarginHorizontal;
+                color: black;
+                text-align: left;
+                width: 80%;
+                margin: 8px auto;
+
+            }
+            .button{
+                position: relative;
+                top: -48px;
+                left: 438px;
+                background-color: #f48484a8;
+                border-radius: 7px;
+                border: 0px;
+                font-size: 15px;
+                padding: 6px;
+            }
+            .button:hover{
+                background-color: #ed4b4bd2;
+                cursor: pointer;
+            }
+            }
+            .applyButton{
+                background-color: blue;
+                border-radius: 10px;
+                cursor: pointer;
+                box-shadow: 5px 5px 5px rgb(43, 43, 43);
+            }
+
+            .applyButton:hover{
+                opacity: 0.5;
+            }
+        }
+        .schcard:hover {
+            transform: scale(1.03);
+            transition: 0.5s;
+            box-shadow: 5px 7px 7px rgb(79, 78, 78);
+            background-color: #db6550;
+            border: none;
+            .schName{
+                color: white;
+            }
+            .details{
+                color: white;
+            }
+        }
+    }
+
+.schName{
+    position: relative;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    top: 17px;
+    color: #713e3e;
+}
+.schAmt{
+    width: 114px;
+    height: 27px;
+    color: rgb(0, 0, 0) !important;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    top: 81px;
+    right: -960px;
+}
+
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+

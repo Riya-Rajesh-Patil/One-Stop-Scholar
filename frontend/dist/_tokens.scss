@@ -1,0 +1,125 @@
+// Declaring all variables for text color, link text color, background color, button color
+$primary-text-color: black;
+$secondary-text-color: #636874;
+$highlight-text-color: white;
+$primary-bg-color: #ffffff;
+$accent-color1: rgb(239, 248, 254);
+$accent-color2: rgb(227,235,251);
+$font-family: 'Nunito', sans-serif;
+$button-color: #f95c39;
+$footer-color: #1f2937;
+
+// Below is map which stores different values of font sizes
+$font-weights: (
+    "regular" : 400,
+    "medium" : 500,
+    "medium-bold" : 600,
+    "bold" : 700,
+    "bolder" : 800,
+    "boldest" : 900
+);
+
+// Function to get font weight from above map variable
+@function fonts($weight-name) {
+    @return map-get($font-weights , $weight-name );
+}
+.selectedBold{
+    color: #e56a54 !important;
+    font-weight: bold;
+}
+.selectedBolder{
+    color: #e56a54 !important;
+    font-weight: bolder !important;
+    //font-style: italic;
+    text-decoration: underline;
+}
+.nav-logo{
+    position: relative;
+    top: 9px;
+    left: -38px;
+}
+
+//Below map has been created to be used in destinations cards
+$destination-images-paths: (
+    image1 : "../public/united-states.jpg",
+    image2 : "../public/united-kingdom.jpg",
+    image3 : "../public/australia.jpg",
+    image4 : "../public/germany.jpg",
+    image9 : "../public/ireland.jpeg",
+    image10 : "../public/uae.jpeg",
+    image11 : "../public/new-zealand.jpeg",
+    image12 : "../public/japan.jpeg",
+    image13 : "../public/singapore.jpg",
+    image14 : "../public/united-kingdom.jpeg",
+
+);
+
+$degree-images-paths: (
+    image5 : "../public/icons8-degree-60.png",
+    image6 : "../public/degree2.png",
+    image7 : "../public/graduation.png",
+    image8 : "../public/online-learning.png"
+);
+
+// Below are mixins for positioning cases and theme change
+@mixin flexEqualDistribution {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexHorizontalCenter {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin autoMarginHorizontal {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// .hide {
+//     display: none;
+// }
+
+// .hide:hover {
+//     display: block;
+// }
+
+// @mixin theme($dark-theme: true) {
+    
+//     // Using if condition to check if dark theme needs to be applied or not
+    
+//     @if $dark-theme {
+//         background-color: rgb(12, 19, 43);
+
+//         #destinations {
+//             background-color: rgb(24, 37, 82);
+//         }
+
+//         .header {
+//             color: white;
+//         }
+
+//         .header-nav-tab a {
+//             color: rgb(226, 226, 226);
+
+//             &:hover {
+//                 color: white;
+
+//             }
+//         }
+
+//         p, h4, h3 {
+//             color: white;
+//         }
+
+//     }
+
+// }
