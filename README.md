@@ -17,10 +17,3 @@ Scholarship Management identifies a particular set of technological solutions fo
 2.Student can choose scholarship based on the eligibility and apply.
 3.Sponsors should be able to update scholarships and information about there scholarships 
 4.The portal will provide a unique platform for students and sponsors to collaborate together for the betterment of the society.
-
-
-## **Project Members**
-<p>Riya Rajesh Patil</p>
-<p>Ritvik Saxena</p>
-<p>Souvik Dinda</p>
-<p>Vinay Kumar Gudooru</p>
